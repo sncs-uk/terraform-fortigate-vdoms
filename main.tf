@@ -11,7 +11,7 @@ terraform {
   }
 }
 locals {
-  vdom_yaml = yamldecode(file("${local.config_path}/config/vdoms.yaml"))
+  vdom_yaml = yamldecode(file("${var.config_path}/config/vdoms.yaml"))
 
   vdom_config = [ for vdom in local.vdom_yaml.vdoms : {
     name          = vdom
