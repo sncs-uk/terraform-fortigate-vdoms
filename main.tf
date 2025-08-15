@@ -25,7 +25,7 @@ locals {
 }
 
 resource fortios_system_global globalsettings {
-  count         = try(local.vdoms_yaml["enable_vdoms"], false) ? 1 : 0
+  count         = try(local.vdom_yaml["enable_vdoms"], false) ? 1 : 0
   vdom_mode     = "multi-vdom"
 }
 
