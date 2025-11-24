@@ -5,7 +5,9 @@ This terraform module configures VDOMs on a firewall
 
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.13.0 |
 
 ## Providers
 
@@ -21,6 +23,7 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [fortios_system_global.globalsettings](https://registry.terraform.io/providers/fortinetdev/fortios/latest/docs/resources/system_global) | resource |
 | [fortios_system_interface.link_rt](https://registry.terraform.io/providers/fortinetdev/fortios/latest/docs/resources/system_interface) | resource |
 | [fortios_system_interface.link_vdom](https://registry.terraform.io/providers/fortinetdev/fortios/latest/docs/resources/system_interface) | resource |
 | [fortios_system_vdom.vdom](https://registry.terraform.io/providers/fortinetdev/fortios/latest/docs/resources/system_vdom) | resource |
